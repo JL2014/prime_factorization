@@ -21,7 +21,7 @@ int main(int argc, char** argv) {
     cerr << "Factorisation: ";
     for (size_t i = 0; i < factor->num; i++) {
         fmpz_print(factor->p + i);
-        cout << "^" << factor->exp[i];
+        if(factor->exp[i] > 1) cout << "^" << factor->exp[i];
         if(i != factor->num-1) cout << " * ";
     }
     cout << endl;
