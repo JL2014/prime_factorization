@@ -1,4 +1,4 @@
-# prime_factorization
+# prime-factorization
 
 ## Compile
 g++ -O2 prime_factorization.cpp -o prime_factorization \`pkg-config --cflags --libs flint\`
